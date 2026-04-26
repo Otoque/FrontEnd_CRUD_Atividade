@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Painel CRUD</h1>
+
+  <div class="menu">
+    <button onclick="mostrar('listar')">Listar</button>
+    <button onclick="mostrar('criar')">Criar</button>
+    <button onclick="mostrar('deletar')">Deletar</button>
+  </div>
+
+  <p class="msg" id="msg"></p>
+
+  <div class="box" id="formBox" style="display:none;">
+    <h2 id="tituloForm">Criar Usuário</h2>
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="salvar()">Salvar</button>
+  </div>
+
+  <div class="lista" id="listaUsuarios"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
