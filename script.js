@@ -1,4 +1,4 @@
-const API = "http://localhost:3000/usuarios";
+const API = "https://backend-crud-atividade.onrender.com";
 
 let modo = "listar";
 let editId = null;
