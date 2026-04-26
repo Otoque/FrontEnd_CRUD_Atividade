@@ -99,4 +99,10 @@ function mensagem(texto){
   }, 2000);
 }
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js');
+  });
+}
+
 mostrar("listar");
